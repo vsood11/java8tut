@@ -6,6 +6,7 @@ package com.varun.gfg.linkedlist;
 public class LinkedList {
 
 	private Node head;
+	private Node tail;
 
 	public LinkedList(Node head) {
 		this.head = head;
@@ -20,5 +21,17 @@ public class LinkedList {
 
 	public void setHead(Node head) {
 		this.head = head;
+	}
+
+	public void insert(int n) {
+		Node newNode = new Node(n);
+		if(head == null) {
+			head = newNode;
+			tail = newNode;
+			return;
+		}
+
+		tail.setNext(newNode);
+		tail = newNode;
 	}
 }
