@@ -34,9 +34,11 @@ public class ProcessFile {
 
 		ProcessFile proc = new ProcessFile();
 		proc.numOfLines(filePath);
+/*
 		proc.numOfWords(filePath);
 		proc.getWordsInAFile(filePath);
 		proc.getDistinctListOfWords(filePath);
+*/
 	}
 
 
